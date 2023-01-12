@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <div class="preloader"><div class="loader"></div></div>
+    <div class="main">
+        <img src="" alt="">
+        <div class="box">
+            <div class="form">
+               <h2>Enter Details</h2> 
+               <div class="inputbox">
+                <input type="text" class="temperature" required="required">
+                <span>Enter Temperature In celcius</span>
+                <i></i>
+               </div>
+               <div class="inputbox">
+                <input type="text" class="humanity" required="required">
+                <span>Enter Humidity </span>
+                <i></i>
+               </div>
+               <div class="inputbox">
+                <input type="text" class="pressure" required="required">
+                <span>Enter Air Pressure </span>
+                <i></i>
+               </div>
+               <div class="links">
+                <a href="#">Need Help?</a>
+                <a href="#">Contact Us</a>
+               </div>
+               <form action="./index.html">
+               <input type="submit" class="submit" onclick="print()" value="Find Result" ><a href="#"></a>
+               </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    setTimeout(() => {
+       document.querySelector('.preloader').style.display = "none" 
+    }, 3000);
+</script>
+<script src="script.js"></script>
+</html>
